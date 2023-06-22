@@ -1,0 +1,296 @@
+:root {
+    --color-1: #dfdfdf;
+    --color-2: #191329;
+    --color-3: #0A6EBD;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("../fonts/Ubuntu-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: "Ubuntu";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    background: var(--color-1);
+    width: 100%;
+    height: 100%;
+}
+
+.block_name .name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.body {
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(173, 173, 173, 0.12) 0px 2px 4px 0px, rgba(176, 177, 177, 0.32) 0px 2px 16px 0px;
+}
+
+.container .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+}
+
+.container .head .name {
+    text-decoration: none;
+    color: var(--color-2);
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.container .head .block_social_media {
+    display: flex;
+    align-items: center;
+}
+
+.container .head .block_social_media .bi {
+    color: var(--color-2);
+    font-size: 17px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.body .photo_profil .photo {
+    width: 240px;
+    height: 240px;
+    position: relative;
+    padding-top: 35px;
+}
+
+.body .photo_profil .photo img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 7px solid #fff;
+}
+
+.body .photo_profil .profil .name_of_me {
+    font-weight: bold;
+}
+
+.body .photo_profil {
+    background-image: url("./assets/images/banner_profil.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 240px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+}
+
+.body .about_me {
+    width: 100%;
+    padding-top: 35px;
+    height: 180px;
+}
+
+.body .about_me h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.body .about_me .about_text .text {
+    text-align: justify;
+}
+
+.body .about_me .other_info .info_perso .a {
+    text-transform: capitalize;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.body .skills,
+.body .langue {
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 25px 0 10px 0;
+}
+
+.body .skills h4,
+.body .langue h4 {
+    font-weight: bold;
+}
+
+.body .skills .a .progresse p,
+.body .skills .b .progresse p {
+    margin-bottom: 10px;
+}
+
+.animated-progress {
+    width: 100%;
+    height: 15px;
+    border-radius: 50px;
+    background: var(--color-1);
+    overflow: hidden;
+    position: relative;
+    box-shadow: rgba(173, 173, 173, 0.12) 0px 2px 4px 0px, rgba(176, 177, 177, 0.32) 0px 2px 16px 0px;
+}
+
+.animated-progress span {
+    height: 100%;
+    display: block;
+    width: 0;
+    color: var(--color-1);
+    line-height: 15px;
+    position: absolute;
+    text-align: center;
+    padding-right: 5px;
+    font-size: 13px;
+    border-radius: 50px;
+}
+
+.progress-color span {
+    background: var(--color-3);
+}
+
+#copyright {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+
+.profil .button_space .download_cv {
+    background: #fff;
+    font-weight: bold;
+    color: var(--color-3);
+    box-shadow: rgba(173, 173, 173, 0.12) 0px 2px 4px 0px, rgba(176, 177, 177, 0.32) 0px 2px 16px 0px;
+    border: 1px solid var(--color-3);
+}
+
+.profil .button_space .hire_me {
+    background: var(--color-2);
+    font-weight: bold;
+    color: var(--color-1);
+    box-shadow: rgba(173, 173, 173, 0.12) 0px 2px 4px 0px, rgba(176, 177, 177, 0.32) 0px 2px 16px 0px;
+}
+
+
+.body .photo_profil {
+    background-image: url("./assets/images/banner_profil.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 240px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* responsivity */
+
+@media (max-width: 1399px) {
+    .body .about_me {
+        margin-bottom: 25px;
+    }
+
+    @media (max-width: 1199px) {
+        .body .about_me {
+            margin-bottom: 70px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .body .photo_profil {
+            display: flex;
+            justify-content: center !important;
+            align-items: center;
+            margin-bottom: 140px;
+        }
+
+        .body .photo_profil .photo {
+            align-items: center;
+            margin-bottom: 40px;
+            padding: 35px 0 0 0;
+        }
+
+        .body .photo_profil .profil {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            color: #191329;
+            text-align: center;
+        }
+
+        .body .about_me {
+            margin-bottom: 115px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .body .about_me {
+            margin-bottom: 200px;
+        }
+    }
+
+    @media (max-width: 531px) {
+        .body .about_me {
+            margin-bottom: 230px;
+        }
+    }
+
+    @media (max-width: 468px) {
+        .body .about_me {
+            margin-bottom: 250px;
+        }
+
+        /* .body .button_space{
+            margin-bottom: 400px;
+        } */
+    }
+
+    @media (max-width: 446px) {
+        .body .about_me {
+            margin-bottom: 280px;
+        }
+
+        .body .about_me h4,
+        .body .skills h4,
+        .body .langue h4 {
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+    @media (max-width:404px) {
+        .body .photo_profil{
+            margin-bottom: 200px !important;
+        }
+    }
+}
