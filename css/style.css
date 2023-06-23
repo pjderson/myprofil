@@ -137,9 +137,17 @@
     padding: 25px 0 10px 0;
 }
 
+#star {
+    color: red;
+}
+
 .body .skills h4,
 .body .langue h4 {
     font-weight: bold;
+}
+
+.body .langue form .btn {
+    width: 100%;
 }
 
 .body .skills .a .progresse p,
@@ -270,16 +278,13 @@
         .body .about_me {
             margin-bottom: 250px;
         }
-
-        /* .body .button_space{
-            margin-bottom: 400px;
-        } */
     }
 
     @media (max-width: 446px) {
-        #wrapper{
+        #wrapper {
             overflow: hidden;
         }
+
         .body .about_me {
             margin-bottom: 300px;
         }
@@ -291,5 +296,5 @@
             text-align: center;
         }
     }
-   
+
 }

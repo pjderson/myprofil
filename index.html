@@ -70,7 +70,7 @@
         <div class="row about_me px-3">
           <div class="col-md-6 about_text" data-aos="zoom-in">
             <h4>àpropos de moi</h4>
-            <p class="text" >Je suis un étudiant en informatique passionné et futur programmeur, concepteur graphique
+            <p class="text">Je suis un étudiant en informatique passionné et futur programmeur, concepteur graphique
               créatif et bénévole engagé. Mon profil combine ma passion pour l'informatique, ma créativité en tant que
               concepteur graphique et mon désir de faire une différence positive en tant que bénévole. Je suis motivé et
               polyvalent, prêt à relever de nouveaux défis pour un monde numérique meilleur.</p>
@@ -178,8 +178,8 @@
         <!--  -->
 
         <div class="row langue px-3">
-          <h4 data-aos="fade-up-right">Compétences Linguistiques</h4>
-          <div class="col-md-12 a">
+          <div class="col-md-6 a">
+            <h4 data-aos="fade-up-right">Compétences Linguistiques</h4>
             <div class="progresse" data-aos="fade-up-left">
               <p>cr&eacute;ole <em>(lue, &eacute;crite, parl&eacute;e)</em></p>
               <p class="progress-bar animated-progress progress-color" title="excellente">
@@ -192,13 +192,33 @@
                 <span data-progress="70"></span>
               </p>
             </div>
-            <div class="progresse">
+            <div class="progresse" data-aos="fade-up-left">
               <p>anglais <em>(lue, &eacute;crite, parl&eacute;e)</em></p>
               <p class="progress-bar animated-progress progress-color" title="d&eacute;butant">
                 <span data-progress="50"></span>
               </p>
             </div>
 
+          </div>
+          <!-- Espace contact -->
+          <div class="col-md-6 b contact">
+            <h4 data-aos="fade-up-right">Formulaire de contact</h4>
+            <form method="" onsubmit="sendEmail(event)">
+              <div class="" data-aos="zoom-in">
+                <label for="name" class="form-label">Nom<span id="star">*</span> :</label>
+                <input type="text" class="form-control shadow-none" id="name" placeholder="Votre nom" required>
+              </div>
+              <div class="" data-aos="zoom-in">
+                <label for="email" class="form-label">Email<span id="star">*</span> :</label>
+                <input type="email" class="form-control shadow-none" id="email" placeholder="Votre email" required>
+              </div>
+              <div class="mb-2" data-aos="zoom-in">
+                <label for="message" class="form-label">Message<span id="star">*</span> :</label>
+                <textarea class="form-control shadow-none" id="message" rows="5" placeholder="Votre message"
+                  required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary shadow-none">Envoyer</button>
+            </form>
           </div>
 
         </div>
@@ -226,7 +246,6 @@
       color: #fff;
       font-weight: bold;
     }
-
   </style>
   <!--  -->
 
@@ -260,6 +279,40 @@
       });
     });
   </script>
+
+  <!--  -->
+  <script type="text/javascript">
+    function sendEmail(event) {
+      event.preventDefault(); // Empêche le formulaire de se soumettre normalement
+      var myname = "Jean Derson Pierre"
+      var templateParams = {
+        from_name: document.getElementById('name').value,
+        from_email: document.getElementById('email').value,
+        to_name: myname, // Remplacez par le nom ou le destinataire souhaité
+        message: document.getElementById('message').value
+      };
+
+      emailjs.send('service_#pjd181101', 'template_yb1qwji', templateParams)
+        .then(function (response) {
+          console.log('E-mail envoyé avec succès', response.status, response.text);
+          // Faites quelque chose ici après l'envoi réussi de l'e-mail (ex: afficher un message de confirmation)
+          window.location.href = "confirm.html";
+        }, function (error) {
+          console.log('Erreur lors de l\'envoi de l\'e-mail', error);
+          // Faites quelque chose ici en cas d'erreur lors de l'envoi de l'e-mail
+        });
+    }
+
+  </script>
+  <!-- Script init emailjs -->
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("3WtkA9mtk_6gWyLPK");
+   })();
+</script>
   <!-- Init AOS lib -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
