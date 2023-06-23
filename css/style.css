@@ -278,7 +278,7 @@
 
     @media (max-width: 446px) {
         .body .about_me {
-            margin-bottom: 280px;
+            margin-bottom: 300px;
         }
 
         .body .about_me h4,
@@ -288,9 +288,5 @@
             text-align: center;
         }
     }
-    @media (max-width:404px) {
-        .body .photo_profil{
-            margin-bottom: 200px !important;
-        }
-    }
+   
 }
