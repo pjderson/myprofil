@@ -59,9 +59,7 @@
             <div class="button_space animate__animated animate__bounceIn">
               <a href="./files/cv_de_pjderson.pdf" target="_blank" download="cv_de_pjderson" class="btn download_cv">Mon
                 CV</a>
-              <a href="
-              https://docs.google.com/forms/d/e/1FAIpQLScGg-5CkcaWSZq2s3d0XnwiJ8sn2lBXWXmXE1zthAEMRxd7ag/viewform?usp=pp_url"
-                target="_blank" class="btn hire_me">Embaucher moi</a>
+              <a href="#hireme" class="btn hire_me">Embaucher moi</a>
             </div>
           </div>
 
@@ -201,7 +199,7 @@
 
           </div>
           <!-- Espace contact -->
-          <div class="col-md-6 b contact">
+          <div class="col-md-6 b contact" id="hireme">
             <h4 data-aos="fade-up-right">Formulaire de contact</h4>
             <form method="" onsubmit="sendEmail(event)">
               <div class="" data-aos="zoom-in">
@@ -305,14 +303,13 @@
 
   </script>
   <!-- Script init emailjs -->
-  <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
       emailjs.init("3WtkA9mtk_6gWyLPK");
-   })();
-</script>
+    })();
+  </script>
   <!-- Init AOS lib -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
