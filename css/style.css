@@ -277,6 +277,9 @@
     }
 
     @media (max-width: 446px) {
+        #wrapper{
+            overflow: hidden;
+        }
         .body .about_me {
             margin-bottom: 300px;
         }
