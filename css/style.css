@@ -144,7 +144,9 @@ html {
 #star {
     color: red;
 }
-
+#em{
+font-size: 1px !important;
+}
 .body .skills h4,
 .body .langue h4 {
     font-weight: bold;
@@ -243,7 +245,7 @@ html {
             display: flex;
             justify-content: center !important;
             align-items: center;
-            margin-bottom: 140px;
+            margin-bottom: 160px;
         }
 
         .body .photo_profil .photo {

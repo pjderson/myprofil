@@ -54,8 +54,7 @@
           </div>
           <div class="col-md-8 profil">
             <h1 class="name_of_me animate__animated animate__fadeInDown">Jean Derson Pierre</h1>
-            <p class="profession animate__animated animate__fadeInDown">Concepteur Graphique &amp; D&eacute;veloppeur
-              Web</p>
+            <p class="profession animate__animated animate__fadeInDown">Concepteur Graphique / Programmeur Junior</p>
             <div class="button_space animate__animated animate__bounceIn">
               <a href="./files/cv_de_pjderson.pdf" target="_blank" download="cv_de_pjderson" class="btn download_cv">Mon
                 CV</a>
@@ -179,19 +178,19 @@
           <div class="col-md-6 a">
             <h4 data-aos="fade-up-right">Compétences Linguistiques</h4>
             <div class="progresse" data-aos="fade-up-left">
-              <p>cr&eacute;ole <em>(lue, &eacute;crite, parl&eacute;e)</em></p>
+              <p>cr&eacute;ole [<em id="em">lue, &eacute;crite, parl&eacute;e</em> ]</p>
               <p class="progress-bar animated-progress progress-color" title="excellente">
                 <span data-progress="100"></span>
               </p>
             </div>
             <div class="progresse" data-aos="fade-up-right">
-              <p>fran&ccedil;ais <em>(lue, &eacute;crite, parl&eacute;e)</em></p>
+              <p>fran&ccedil;ais [<em id="em">lue, &eacute;crite, parl&eacute;e</em> ]</p>
               <p class="progress-bar animated-progress progress-color" title="bien">
                 <span data-progress="70"></span>
               </p>
             </div>
             <div class="progresse" data-aos="fade-up-left">
-              <p>anglais <em>(lue, &eacute;crite, parl&eacute;e)</em></p>
+              <p>anglais [<em id="em">lue, &eacute;crite, parl&eacute;e</em> ]</p>
               <p class="progress-bar animated-progress progress-color" title="d&eacute;butant">
                 <span data-progress="50"></span>
               </p>
@@ -244,6 +243,10 @@
       color: #fff;
       font-weight: bold;
     }
+
+    #em {
+      font-size: 13px !important;
+    }
   </style>
   <!--  -->
 
@@ -265,15 +268,15 @@
           duration
         );
 
-        var interval = setInterval(function () {
-          currentCount += increment;
-          if (currentCount >= targetValue) {
-            clearInterval(interval);
-            currentCount = targetValue;
-          }
+        // var interval = setInterval(function () {
+        //   currentCount += increment;
+        //   if (currentCount >= targetValue) {
+        //     clearInterval(interval);
+        //     currentCount = targetValue;
+        //   }
 
-          element.text(Math.round(currentCount) + "%"); // Utilisation de la référence à l'élément span
-        }, 10);
+        //   element.text(Math.round(currentCount) + "%"); // Utilisation de la référence à l'élément span
+        // }, 10);
       });
     });
   </script>
