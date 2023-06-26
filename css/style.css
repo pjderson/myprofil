@@ -23,9 +23,10 @@ html {
 }
 
 #wrapper {
-    background: var(--color-1);
+    /* background: var(--color-1); */
     width: 100%;
     height: 100%;
+    box-shadow: rgba(173, 173, 173, 0.12) 0px 2px 4px 0px, rgba(176, 177, 177, 0.32) 0px 2px 16px 0px;
 }
 
 .block_name .name {
@@ -94,6 +95,7 @@ html {
     height: 100%;
     position: absolute;
     border: 7px solid #fff;
+    border-radius: 15px;
 }
 
 .body .photo_profil .profil .name_of_me {
