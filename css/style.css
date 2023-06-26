@@ -230,7 +230,7 @@ html {
         display: flex;
         justify-content: center !important;
         align-items: center;
-        margin-bottom: 170px;
+        margin-bottom: 180px;
     }
 
     .body .photo_profil .box-profil {
@@ -238,11 +238,12 @@ html {
         justify-content: space-between !important;
         align-items: center;
         flex-direction: column;
-        height: 400px;
+        height: auto;
     }
 
     .body .photo_profil .box-profil .photo {
         align-items: center;
+        margin-bottom: 30px;
     }
     .body .photo_profil .box-profil .photo img{
         top: 70%;
