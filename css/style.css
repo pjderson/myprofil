@@ -157,10 +157,9 @@ html {
     color: red;
 }
 
-#em {
-    font-size: 1px !important;
+#btn{
+    color: var(--color-3);
 }
-
 .body .skills h4,
 .body .langue h4 {
     font-weight: bold;

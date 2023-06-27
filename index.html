@@ -217,7 +217,7 @@
                 <textarea class="form-control shadow-none" id="message" rows="5" placeholder="Votre message"
                   required></textarea>
               </div>
-              <button type="submit" class="btn btn-primary shadow-none">Envoyer</button>
+              <button type="submit" class="btn shadow-none" id="btn">Envoyer</button>
             </form>
           </div>
 
@@ -249,6 +249,11 @@
 
     #em {
       font-size: 13px !important;
+    }
+
+    #btn {
+      background: var(--color-3);
+      color: #fff;
     }
   </style>
   <!--  -->
@@ -312,8 +317,9 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
   </script>
   <script type="text/javascript">
+    var publicKey = "3WtkA9mtk_6gWyLPK";
     (function () {
-      emailjs.init("3WtkA9mtk_6gWyLPK");
+      emailjs.init(publicKey);
     })();
   </script>
   <!-- Init AOS lib -->
