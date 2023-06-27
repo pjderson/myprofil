@@ -157,9 +157,6 @@ html {
     color: red;
 }
 
-#btn{
-    color: var(--color-3);
-}
 .body .skills h4,
 .body .langue h4 {
     font-weight: bold;
