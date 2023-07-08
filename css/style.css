@@ -20,6 +20,7 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 16px;
 }
 
 #wrapper {
@@ -29,7 +30,7 @@ html {
 }
 
 .block_name .name {
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
@@ -58,7 +59,7 @@ html {
     text-decoration: none;
     color: var(--color-2);
     font-weight: bold;
-    font-size: 19px;
+    font-size: 1.1rem;
 }
 
 .container .head .block_social_media {
@@ -68,7 +69,7 @@ html {
 
 .container .head .block_social_media .bi {
     color: var(--color-2);
-    font-size: 17px;
+    font-size: 1rem;
 }
 
 .container {
@@ -189,7 +190,7 @@ html {
     position: absolute;
     text-align: center;
     padding-right: 5px;
-    font-size: 13px;
+    font-size: .8rem;
     /* border-radius: 2px; */
 }
 
@@ -198,7 +199,7 @@ html {
 }
 
 #copyright {
-    font-size: 14px;
+    font-size: .8rem;
     padding: 0;
     margin: 0;
 }
@@ -267,7 +268,7 @@ html {
     .body .skills h4,
     .body .langue h4,
     .body .contact h4 {
-        font-size: 16px;
+        font-size: 1rem;
         text-align: center;
     }
     .body .about_me p,
@@ -275,7 +276,7 @@ html {
     .body .langue p,
     .body .contact label,
     .body .about_me .other_info .info_perso p{
-        font-size: 14px;
+        font-size: .9rem;
     }
     .animated-progress{
         height: 9px;
