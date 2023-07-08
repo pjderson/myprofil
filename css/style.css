@@ -265,10 +265,20 @@ html {
 
     .body .about_me h4,
     .body .skills h4,
-    .body .langue h4 {
-        font-size: 18px;
+    .body .langue h4,
+    .body .contact h4 {
+        font-size: 16px;
         text-align: center;
     }
+    .body .about_me p,
+    .body .skills p,
+    .body .langue p,
+    .body .contact label,
+    .body .about_me .other_info .info_perso p{
+        font-size: 14px;
+    }
+    .animated-progress{
+        height: 9px;
+    }
 }
-
 /* end responsivity */
